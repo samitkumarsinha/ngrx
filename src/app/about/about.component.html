@@ -1,0 +1,7 @@
+<form [formGroup]="userform" (submit)="submit(userform.value)">
+    <p>email <input formControlName="email"></p>
+    <p>username <input formControlName="username"></p>
+    <p>password <input formControlName="password"></p>
+    <p><button type="submit" [disabled]="!userform.valid">submit</button></p>
+
+</form>
